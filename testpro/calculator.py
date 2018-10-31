@@ -5,6 +5,7 @@
 # @File    : calculator.py
 # @Software: PyCharm
 # 计算器类1
+# 增加“减法”计算
 
 
 class Count:
@@ -15,3 +16,7 @@ class Count:
     # 计算加法
     def add(self):
         return self.a + self.b
+
+    # 计算减法
+    def sub(self):
+        return self.a - self.b

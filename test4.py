@@ -6,7 +6,7 @@
 # @Software: PyCharm
 
 
-from count import is_prime
+from testpro.count import is_prime
 import unittest
 
 

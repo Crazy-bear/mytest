@@ -6,7 +6,7 @@
 # @Software: PyCharm
 # 学习unittest测试框架，增加测试集1
 
-from mytest.calculator import Count
+from testpro.calculator import Count
 import unittest
 
 
