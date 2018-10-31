@@ -8,8 +8,10 @@
 from selenium import webdriver
 import unittest
 import time
+from flaky import flaky
 
 
+@flaky(max_runs=3, min_passes=2)
 class MyTest(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
@@ -28,7 +30,7 @@ class MyTest(unittest.TestCase):
         driver.find_element_by_id('form').click()
         time.sleep(2)
         title = driver.title
-        self.assertEqual(title, '有道首页')
+        self.assertEqual(title, '首页')
 
     def tearDown(self):
         self.driver.quit()
