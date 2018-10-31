@@ -15,7 +15,7 @@ class Test(unittest.TestCase):
         self.number = int(number)
 
     def test_case(self):
-        self.assertEqual(self.number, 10, '你输入的数字不是10')
+        self.assertEqual(self.number, 1, '你输入的数字不是10')
 
     def teardown(self):
         pass
